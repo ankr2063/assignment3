@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10">>
+    android:weightSum="10">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -17,7 +15,6 @@
             android:id="@+id/linearLayoutCheckout"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="9"
             android:background="#ffffff"
             android:gravity="center"
             android:orientation="vertical"
@@ -28,13 +25,15 @@
                 android:layout_width="50dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
+                android:hint="@string/pay1"
+                android:autofillHints="0.00"
                 android:inputType="numberDecimal" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
-                android:text="Enter amount"
+                android:text="@string/amt"
                 android:textColor="#000000"
                 android:textSize="24sp"
                 android:textStyle="bold" />
@@ -56,7 +55,7 @@
             android:layout_height="match_parent"
             android:layout_margin="2dp"
             android:background="#007200"
-            android:text="PAY"
+            android:text="@string/pay"
             android:textColor="#ffffff"
             android:visibility="visible" />
     </LinearLayout>

@@ -24,8 +24,9 @@
                 android:layout_height="?attr/actionBarSize"
                 android:layout_marginStart="160dp"
                 android:clickable="true"
+                android:focusable="true"
                 android:gravity="center"
-                android:text="PAY"
+                android:text="@string/pay"
                 android:textColor="#ffffff"
                 android:textSize="20sp"
                 android:textStyle="bold" />

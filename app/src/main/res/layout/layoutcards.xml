@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
@@ -22,7 +21,6 @@
 
         <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:card_view="http://schemas.android.com/apk/res-auto"
-            xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -35,8 +33,8 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginEnd="16dp"
                 android:layout_toEndOf="@+id/name"
-                android:gravity="left|center"
-                android:text="a day ago"
+                android:gravity="end|center"
+                android:text="@string/ada"
                 android:textAlignment="textEnd"
                 android:textColor="@android:color/darker_gray"
                 android:textSize="16sp"
@@ -50,8 +48,8 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="16dp"
                 android:layout_toEndOf="@+id/icon"
-                android:gravity="left|center"
-                android:text="Ankit Kumar"
+                android:gravity="start|center"
+                android:text="@string/name"
                 android:textColor="@android:color/black"
                 android:textSize="18sp"
                 android:textStyle="bold"
@@ -66,6 +64,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="15dp"
+                android:contentDescription="@string/img"
                 card_view:layout_constraintStart_toStartOf="parent"
                 card_view:layout_constraintTop_toTopOf="parent"
                 card_view:srcCompat="@drawable/circle" />
@@ -78,7 +77,7 @@
                 android:layout_alignTop="@+id/imageView"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
-                android:text="AK"
+                android:text=""
                 android:textColor="@android:color/holo_red_light"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -95,7 +94,7 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="12dp"
                 android:layout_marginEnd="8dp"
-                android:text="In general, the APIs in the v7 mediarouter library provide a means of controlling the routing of media channels and streams from the current device to external screens, speakers, and other destination devices. The library includes APIs for publishing app-specific media route providers, for discovering and selecting destination devices, for checking media status, and more."
+                android:text="@string/text"
                 android:textAlignment="viewStart"
                 android:textColor="@android:color/black"
                 android:textSize="16sp"
@@ -111,7 +110,7 @@
                 android:layout_below="@+id/text"
                 android:layout_alignStart="@+id/imageView"
                 android:layout_marginTop="12dp"
-                android:text="0"
+                android:text="@string/zero"
                 card_view:layout_constraintStart_toStartOf="@+id/img"
                 card_view:layout_constraintTop_toBottomOf="@+id/img" />
 
@@ -122,7 +121,7 @@
                 android:layout_alignTop="@+id/nlike"
                 android:layout_marginStart="8dp"
                 android:layout_toEndOf="@+id/nlike"
-                android:text="Likes"
+                android:text="@string/likes"
                 card_view:layout_constraintStart_toEndOf="@+id/nlike"
                 card_view:layout_constraintTop_toTopOf="@+id/nlike" />
 
@@ -133,7 +132,7 @@
                 android:layout_alignTop="@+id/nlike"
                 android:layout_marginStart="16dp"
                 android:layout_toEndOf="@+id/likes"
-                android:text="0"
+                android:text="@string/zero"
                 card_view:layout_constraintStart_toEndOf="@+id/likes"
                 card_view:layout_constraintTop_toTopOf="@+id/likes" />
 
@@ -144,7 +143,7 @@
                 android:layout_alignTop="@+id/nlike"
                 android:layout_marginStart="8dp"
                 android:layout_toEndOf="@+id/nlike"
-                android:text="Comments"
+                android:text="@string/comments"
                 card_view:layout_constraintStart_toEndOf="@+id/ncomments"
                 card_view:layout_constraintTop_toTopOf="@+id/ncomments" />
 
@@ -168,12 +167,13 @@
                 android:layout_below="@+id/nlike"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentBottom="true"
-                android:drawableLeft="@drawable/ic_thumb_up_black1_24dp"
+                android:drawableStart="@drawable/ic_thumb_up_black1_24dp"
                 android:drawablePadding="5dp"
                 android:gravity="center"
-                android:onClick="like"
                 android:singleLine="true"
-                android:text="Like"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/like"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 card_view:layout_constraintStart_toStartOf="@+id/img"
@@ -187,12 +187,13 @@
                 android:layout_alignParentBottom="true"
                 android:layout_toEndOf="@+id/like"
                 android:alpha="0.75"
-                android:drawableLeft="@drawable/ic_comment_black_24dp"
+                android:drawableStart="@drawable/ic_comment_black_24dp"
                 android:drawablePadding="5dp"
                 android:gravity="center"
-                android:onClick="comment"
+                android:clickable="true"
+                android:focusable="true"
                 android:singleLine="true"
-                android:text="Comment"
+                android:text="@string/comment"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 card_view:layout_constraintStart_toEndOf="@+id/like"
@@ -207,12 +208,13 @@
                 android:layout_alignParentBottom="true"
                 android:layout_toEndOf="@+id/comment"
                 android:alpha="0.75"
-                android:drawableLeft="@drawable/ic_share_black_24dp"
+                android:drawableStart="@drawable/ic_share_black_24dp"
                 android:drawablePadding="2dp"
                 android:gravity="center"
-                android:onClick="share"
                 android:singleLine="true"
-                android:text="Share"
+                android:clickable="true"
+                android:focusable="true"
+                android:text="@string/share"
                 android:textColor="#000000"
                 android:textSize="16sp"
                 card_view:layout_constraintStart_toEndOf="@+id/comment"
@@ -223,6 +225,7 @@
                 android:layout_width="300dp"
                 android:layout_height="wrap_content"
                 android:background="#686868"
+                android:contentDescription="@string/img"
                 card_view:layout_constraintStart_toStartOf="@+id/text"
                 card_view:layout_constraintTop_toBottomOf="@+id/text" />
 

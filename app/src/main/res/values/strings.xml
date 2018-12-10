@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">ASSIGNMENT</string>
+    <string name="amt">Enter Amount</string>
+    <string name="pay">PAY</string>
+    <string name="pay1">0.00</string>
+    <string name="ent">Enter here</string>
+    <string name="enp">Enter new post:-</string>
+    <string name="img">Image</string>
+    <string name="ada">a day ago</string>
+    <string name="name">Ankit Kumar</string>
+    <string name="zero">0</string>
+    <string name="likes">Likes</string>
+    <string name="comments">Comments</string>
+    <string name="like">Like</string>
+    <string name="comment">Comment</string>
+    <string name="share">Share</string>
+    <string name="text">In general, the APIs in the v7 mediarouter library provide a means of controlling the routing of media channels and streams from the current device to external screens, speakers, and other destination devices. The library includes APIs for publishing app-specific media route providers, for discovering and selecting destination devices, for checking media status, and more.</string>
+
 </resources>
